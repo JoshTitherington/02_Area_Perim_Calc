@@ -1,11 +1,21 @@
-valid = False
-while not valid:
+# functions go here
 
-    response = float(input("Enter a number: "))
+# checks input is a number more than zero
+def num_check(question):    
 
-    if response > 0:
-        valid = True
 
-    else: 
-        print("Please enter a number that is more than zero")
-        print()
+
+
+# Main Routine goes here
+width = num_check("Width: ")
+height = num_check("Height")
+
+# Calculate area (width x height)
+area = width * height
+
+# Calculate perimeter (width + height) x 2
+perimeter = 2 * (width + height)
+
+# Output area and perimeter
+print("Perimeter: {} units".format(perimeter))
+print("Area: {} units".format(area))
