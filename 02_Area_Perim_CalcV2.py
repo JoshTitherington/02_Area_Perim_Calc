@@ -1,31 +1,34 @@
-    
+
 def num_check(question):
+    valid = False
 
+    print(question)
+    
+    while not valid:
+        response = float(input("Enter a number: "))
 
-    print()
-    print("**** Area Perimeter Calculator *****")
-    print()
+        if response > 0:
+            valid = True
+        else: 
+            print("Please enter a number greater than 0.")
+        
+    return response
 
-    # Start of calculator loop
-    keep_going =""
-    while keep_going == "":
+#Main program
+print()
+print("**** Area Perimeter Calculator *****")
+print()
 
-        width = num_check("Width: ")
-        height = num_check("Height: ")
+width = num_check("Width: ")
+height = num_check("Height: ")
 
-        # Calculate area (width x height)
-        area = width * height
+area = width * height
 
-        # Calculate perimeter (width + height) x 2
-        perimeter = 2 * (width + height)
+perimeter = 2 * (width + height)
 
-        # Output area and perimeter
-        print("Perimeter: {:.2f} units".format(perimeter))
-        print("Area: {:.2f} units".format(area))
-        print()
-
-        keep_going = input("Press <enter> to keep going or any key to quit")
-
+print("Perimeter: {:.2f} units".format(perimeter))
+print("Area: {:.2f} units".format(area))
+print()
 print()
 print("Thanks for using the area / perimeter calculator")
 
