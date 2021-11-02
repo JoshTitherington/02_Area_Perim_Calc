@@ -31,7 +31,18 @@ print("Perimeter: {:.2f} units".format(perimeter))
 print("Cost: {:.2f} units".format(cost))
 print()
 print()
-print("Thanks for using the area / perimeter calculator")
+print("Thanks for using the fence calculator")
 
-    
-    
+
+
+
+
+
+
+
+
+keep_going = input("press <enter> to keep going ot any key to quit")
+
+print()
+print("-" * 30)
+print()
